@@ -82,6 +82,7 @@ section {
 }
 .home .content {
   flex: 1 1 42rem;
+  text-transform: none;
 }
 .home .content h3 {
   color: #fff;
@@ -287,7 +288,7 @@ section {
 .portofolio .box-container .box:hover .content {
   transform: translateY(0);
 }
-.portofolio .box-container .box .img {
+.portofolio .box-container .box a .img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -389,19 +390,11 @@ section {
 }
 
 .contact .row {
+  width: 100%;
+  text-align: center;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.contact .row .info-container {
-  width: 50rem;
-}
-.contact .row .info-container h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #fff;
-  padding-bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
 }
 .contact .row .info-container p {
   font-size: 1.5rem;
@@ -414,6 +407,8 @@ section {
 }
 .contact .row .info-container .box-container .box {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   gap: 2rem;
 }
 .contact .row .info-container .box-container .box i {
@@ -432,40 +427,6 @@ section {
 }
 .contact .row .info-container .share a:hover {
   background: crimson;
-}
-.contact .row form {
-  flex: 1 1 42rem;
-}
-.contact .row form .inputbox {
-  display: flex;
-  gap: 2rem;
-}
-.contact .row form input {
-  width: 49%;
-}
-.contact .row form .inputbox input,
-.contact .row form textarea {
-  padding: 1.2rem 1.8rem;
-  border-radius: 0.5rem;
-  color: #fff;
-  font-size: 1.5rem;
-  text-transform: none;
-  margin: 0.7rem 0;
-  background: #1a1a1a;
-}
-.contact .row form textarea {
-  width: 100%;
-  border-radius: 1rem;
-  resize: none;
-  height: 25rem;
-}
-.contact .row form .btn {
-  padding: 1rem 3rem;
-  margin-top: 2rem;
-}
-.contact .row form .btn:hover {
-  background: #fff;
-  color: #000;
 }
 
 @media (max-width: 1200px) {

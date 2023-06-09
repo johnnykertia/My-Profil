@@ -103,6 +103,7 @@ section {
 
   .content {
     flex: 1 1 42rem;
+    text-transform: none;
 
     h3 {
       color: $white;
@@ -340,7 +341,7 @@ section {
       &:hover .content {
         transform: translateY(0);
       }
-      .img {
+      a .img {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -460,20 +461,20 @@ section {
 // contact
 .contact {
   .row {
+    width: 100%;
+    text-align: center;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
 
     .info-container {
-      width: 50rem;
 
-      h1 {
-        font-size: 3rem;
-        text-transform: uppercase;
-        color: $white;
-        padding-bottom: 1rem;
-      }
+      // h1 {
+      //   font-size: 3rem;
+      //   text-transform: uppercase;
+      //   color: $white;
+      //   padding-bottom: 1rem;
+      // }
 
       p {
         font-size: 1.5rem;
@@ -487,6 +488,8 @@ section {
 
         .box {
           display: flex;
+          justify-content: center;
+          flex-direction: column;
           gap: 2rem;
 
           i {
@@ -527,45 +530,45 @@ section {
       }
     }
 
-    form {
-      flex: 1 1 42rem;
+    // form {
+    //   flex: 1 1 42rem;
 
-      .inputbox {
-        display: flex;
-        gap: 2rem;
-      }
+    //   .inputbox {
+    //     display: flex;
+    //     gap: 2rem;
+    //   }
 
-      input {
-        width: 49%;
-      }
+    //   input {
+    //     width: 49%;
+    //   }
 
-      .inputbox input,
-      textarea {
-        padding: 1.2rem 1.8rem;
-        border-radius: 0.5rem;
-        color: $white;
-        font-size: 1.5rem;
-        text-transform: none;
-        margin: 0.7rem 0;
-        background: $lightbg;
-      }
+    //   .inputbox input,
+    //   textarea {
+    //     padding: 1.2rem 1.8rem;
+    //     border-radius: 0.5rem;
+    //     color: $white;
+    //     font-size: 1.5rem;
+    //     text-transform: none;
+    //     margin: 0.7rem 0;
+    //     background: $lightbg;
+    //   }
 
-      textarea {
-        width: 100%;
-        border-radius: 1rem;
-        resize: none;
-        height: 25rem;
-      }
+    //   textarea {
+    //     width: 100%;
+    //     border-radius: 1rem;
+    //     resize: none;
+    //     height: 25rem;
+    //   }
 
-      .btn {
-        padding: 1rem 3rem;
-        margin-top: 2rem;
-        &:hover {
-          background: $white;
-          color: $black;
-        }
-      }
-    }
+    //   .btn {
+    //     padding: 1rem 3rem;
+    //     margin-top: 2rem;
+    //     &:hover {
+    //       background: $white;
+    //       color: $black;
+    //     }
+    //   }
+    // }
   }
 }
 
