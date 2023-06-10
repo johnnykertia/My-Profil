@@ -323,6 +323,18 @@ section {
         font-size: normal;
       }
     }
+
+    .serifikat{
+      max-width: 500px;
+      width: 100%;
+      margin: 1rem auto;
+      a{
+        img{
+          width: 100%;
+          height: 100%px;
+        }
+      }
+    }
   }
 }
 

@@ -271,6 +271,15 @@ section {
   color: #fff;
   font-size: normal;
 }
+.education .box-container .serifikat {
+  max-width: 500px;
+  width: 100%;
+  margin: 1rem auto;
+}
+.education .box-container .serifikat a img {
+  width: 100%;
+  height: 100% px;
+}
 
 .portofolio {
   text-align: center;
